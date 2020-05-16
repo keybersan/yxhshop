@@ -1,0 +1,43 @@
+server:
+    port: 8089
+eureka:
+    client:
+        service-url:
+            defaultZone: http://127.0.0.1:8761/eureka/
+spring:
+    application:
+        name: yxhshop-api-gateway
+    cloud:
+        gateway:
+            locator:
+                enabled: true
+            routes:
+            - id: swagger
+              uri: lb://yxhshop-user,lb://yxhshop-goods
+              predicates:
+              - Path=/**
+              filters:
+              - SwaggerHeaderFilter
+
+
+        config:
+            discovery:
+                enabled: true
+                service-id: yxhshop-config-server
+            #profile:
+            name: yxhshop-api-gateway,datasource
+            #uri:
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+
+foo: test
+
+
+
+
+
+

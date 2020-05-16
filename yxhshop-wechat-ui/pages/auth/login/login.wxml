@@ -1,0 +1,8 @@
+<view class="container">
+  <view class='l-view'>
+    允许微信授权后，可体验更多功能</view>
+  <view>
+    <button open-type='getUserInfo' bindgetuserinfo="bindGetUserInfo" class="button-primary" hover-class="button-primary-hover">授权登录</button>
+    <button bindtap='navigateBack' class="button-primary" hover-class="button-primary-hover">返回上级</button>
+  </view>
+</view>

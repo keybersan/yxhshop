@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.rkele.yxhshop.user.mapper.DictionaryMapper">
+    <resultMap id="BaseResultMap" type="com.rkele.yxhshop.user.po.Dictionary">
+        <!--
+      WARNING - @mbg.generated
+    -->
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="dict_code" property="dictCode" jdbcType="VARCHAR"/>
+        <result column="dict_name" property="dictName" jdbcType="VARCHAR"/>
+        <result column="dict_value" property="dictValue" jdbcType="VARCHAR"/>
+        <result column="dict_desc" property="dictDesc" jdbcType="VARCHAR"/>
+        <result column="del_flag" property="delFlag" jdbcType="VARCHAR"/>
+        <result column="dict_type" property="dictType" jdbcType="VARCHAR"/>
+    </resultMap>
+</mapper>

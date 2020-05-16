@@ -1,0 +1,22 @@
+.container {
+  box-sizing: border-box;
+  background-color: #fff;
+  font-family: PingFangSC-Light,helvetica,'Heiti SC';
+} 
+
+.button-primary {
+  margin-top: 10px;
+  width: 90%;
+  background-color:#07C160;
+  color: white;
+}
+ 
+.button-primary-hover {
+  background: #06AD56;
+}
+
+.l-view {
+  text-align:center;
+  margin-top:20rpx;
+  margin-bottom:20px;
+}
